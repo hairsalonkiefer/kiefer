@@ -1,0 +1,153 @@
+body {
+  color: #4e5f74;
+  font-size: 14px;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.jumbotron {
+  padding: 30rem 0 0 0;
+  color: white;
+  background: url(../img/background_photo.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.jumbotron__title {
+  font-weight: 800;
+  font-size: 2rem;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+.gray {
+  background-color: #F9FAFC;
+}
+
+h2 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+  padding: .8rem 0;
+}
+
+h2::after {
+  display: block;
+  margin: 10px auto;
+  width: 80px;
+  height: 2px;
+  background: rgba(0, 0, 0, .3);
+  background-size: 16px 50px;
+  content: '';
+}
+
+table {
+  margin: 2rem auto;
+  width: 80%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  padding: 13px 4px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+strong {
+  background: linear-gradient(transparent 64%, #fcf69f 0%);
+}
+
+.shop_name {
+  color: #3e77bd;
+  font-size: 1.2rem;
+}
+
+iframe {
+  display: block;
+  margin: 2rem auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex_item {
+  flex: 1;
+  padding: 1rem 1.5rem;
+}
+
+/* Google Mapを囲う要素 */
+.map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 75%;
+  /* 比率を4:3に固定 */
+}
+
+/* Google Mapのiframe */
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mt-4{
+  margin-top: 4rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius:50%;
+}
+
+footer{
+  background-image: linear-gradient(to right,rgba(31,90,93,.9),rgba(31,38,93,.9));
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Larger than phablet */
+@media(min-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 840px;
+    padding: 0;
+  }
+}
