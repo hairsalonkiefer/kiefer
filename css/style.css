@@ -76,6 +76,10 @@ td {
   text-align: left;
 }
 
+td.no-border {
+  border-bottom: none;
+}
+
 .center {
   text-align: center;
 }
